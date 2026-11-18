@@ -1,0 +1,15 @@
+{
+  "name": "omoogle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Random video + text chat with strangers. No phone number, no email, no account.",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

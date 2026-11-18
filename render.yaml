@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: omoogle
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      # Optional but strongly recommended for reliable worldwide connections:
+      # - key: TURN_URL
+      #   value: turn:your-turn-host:3478,turns:your-turn-host:5349
+      # - key: TURN_USER
+      #   sync: false
+      # - key: TURN_PASS
+      #   sync: false
